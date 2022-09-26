@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.shop {
+  position: relative;
+}
+.products {
+  min-height: 84vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  padding: 60px 0;
+}
+.order-review {
+  width: 13vw;
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(0%, -50%);
+  background-color: var(--orange-bg);
+  height: 70vh;
+  border-radius: 10px 0 0 10px;
+}
+.order-review-wrap {
+  padding: 15px;
+}
