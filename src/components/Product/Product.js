@@ -9,7 +9,14 @@ const Product = (props) => {
   return (
     <div className="product">
       <div className="product_img">
-        <img src={img ? img : "no image found"} alt="" />
+        <img
+          src={img}
+          alt=""
+          onError={(e) => {
+            e.currentTarget.src =
+              "https://img.freepik.com/free-vector/internet-network-warning-404-error-page-file-found-web-page-internet-error-page-issue-found-network-404-error-present-by-man-sleep-display_1150-55450.jpg?w=1380&t=st=1664197948~exp=1664198548~hmac=4c9a4697932e79a9c88a532049b5fb7171f29aaff5579d855e4cef7679b9cd09";
+          }}
+        />
       </div>
       <div className="product_info">
         <div>
