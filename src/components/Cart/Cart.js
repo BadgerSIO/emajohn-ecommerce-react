@@ -1,8 +1,9 @@
+import { faBroom, faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import "./Cart.css";
 const Cart = (props) => {
   const { cart } = props;
-  console.log(cart);
   let total = 0;
   let shipping = 0;
   let quan = 0;
@@ -15,13 +16,21 @@ const Cart = (props) => {
   let grandTotal = total + shipping + tax;
   return (
     <div className="cart">
+      <FontAwesomeIcon
+        icon={faCartShopping}
+        className="shoppingCart"
+      ></FontAwesomeIcon>
       <h2>Order Summary</h2>
       <h4>Selected items: {quan}</h4>
       <h4>Total Price: ${total} </h4>
       <h4>Total Shipping Charge: ${shipping}</h4>
       <h4>Tax: ${tax} </h4>
       <h3>Grand Total</h3>
-      <h4 className="text-center">${grandTotal}</h4>
+      <h4>${grandTotal}</h4>
+      <button className="clearCartBtn">
+        <FontAwesomeIcon icon={faBroom} className="clearCart"></FontAwesomeIcon>
+        Clear Cart
+      </button>
     </div>
   );
 };

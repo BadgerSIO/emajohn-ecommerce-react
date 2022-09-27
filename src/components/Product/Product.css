@@ -2,7 +2,7 @@
   padding: 7px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e2e2;
 }
 .product_img {
   overflow: hidden;
@@ -82,5 +82,5 @@
   background-color: var(--orange-10);
 }
 .addToCart p {
-  margin-right: 5px;
+  margin-left: 5px;
 }

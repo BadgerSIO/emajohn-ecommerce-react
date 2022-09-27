@@ -19,9 +19,13 @@
   right: 0;
   transform: translate(0%, -50%);
   background-color: var(--orange-bg);
-  height: 70vh;
+  height: auto;
   border-radius: 10px 0 0 10px;
+
+  display: flex;
+  align-items: center;
 }
 .order-review-wrap {
   padding: 15px;
+  width: 100%;
 }
